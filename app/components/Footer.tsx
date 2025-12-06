@@ -1,5 +1,8 @@
 'use client';
 
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -7,11 +10,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              <span className="text-white">App</span>
-              <span className="text-brand-red">Tools</span>
-              <span className="text-brand-teal">Pro</span>
-            </h3>
+            <Link href="/" className="flex items-center space-x-3 mb-4 cursor-pointer w-fit">
+              <Image
+                src="/logo.png"
+                alt="App Tools Pro Logo"
+                width={64}
+                height={64}
+                className="rounded-lg"
+              />
+              <h3 className="text-2xl font-bold">
+                <span className="text-white">App</span>
+                <span className="text-brand-red">Tools</span>
+                <span className="text-brand-teal">Pro</span>
+              </h3>
+            </Link>
             <p className="text-gray-400 leading-relaxed">
               Building the future, one tool at a time.
             </p>
