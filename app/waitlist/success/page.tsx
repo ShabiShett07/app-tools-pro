@@ -2,13 +2,26 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function SuccessPage() {
   const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
+    // Check if user has a valid session flag
+    const hasCompletedForm = sessionStorage.getItem('waitlist_completed');
+
+    if (!hasCompletedForm) {
+      // Redirect to home if accessed directly
+      router.push('/');
+      return;
+    }
+
+    // Clear the flag after showing the page
+    sessionStorage.removeItem('waitlist_completed');
     setMounted(true);
-  }, []);
+  }, [router]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-red via-brand-red to-brand-teal flex items-center justify-center px-4 py-8">

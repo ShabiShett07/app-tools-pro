@@ -73,7 +73,8 @@ function WaitlistForm() {
 
       if (error) throw error;
 
-      // Redirect to success page
+      // Set session flag and redirect to success page
+      sessionStorage.setItem('waitlist_completed', 'true');
       router.push('/waitlist/success');
     } catch (err: any) {
       console.error('Error submitting form:', err);
@@ -84,7 +85,8 @@ function WaitlistForm() {
   };
 
   const handleSkip = () => {
-    // Redirect to success page without saving additional details
+    // Set session flag and redirect to success page without saving additional details
+    sessionStorage.setItem('waitlist_completed', 'true');
     router.push('/waitlist/success');
   };
 
