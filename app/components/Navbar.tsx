@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { smoothScrollTo } from '../utils/smoothScroll';
 
 export default function Navbar() {
@@ -28,13 +30,21 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-3 cursor-pointer">
+            <Image
+              src="/logo.png"
+              alt="App Tools Pro Logo"
+              width={40}
+              height={40}
+              className="rounded-lg"
+              priority
+            />
             <div className="text-2xl font-bold">
               <span className="text-foreground">App</span>
               <span className="text-brand-red">Tools</span>
               <span className="text-brand-teal">Pro</span>
             </div>
-          </div>
+          </Link>
 
           <div className="hidden md:flex items-center space-x-8">
             <a
