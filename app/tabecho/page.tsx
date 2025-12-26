@@ -247,9 +247,8 @@ export default function TabEchoPage() {
             <div className="bg-white rounded-2xl shadow-xl p-6 border-4 border-brand-teal flex flex-col">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">👔 Enterprise Tier</h3>
-                <div className="text-3xl font-bold text-brand-teal mb-1">$15/mo</div>
-                <p className="text-gray-500 text-sm">per user</p>
-                <p className="text-gray-600 text-sm mt-2">For teams</p>
+                <div className="text-3xl font-bold text-brand-teal mb-2">Custom Pricing</div>
+                <p className="text-gray-600 text-sm">For teams and organizations</p>
               </div>
               <div className="space-y-3 flex-grow">
                 <div className="flex items-start">
