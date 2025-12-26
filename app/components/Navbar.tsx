@@ -3,10 +3,13 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter, usePathname } from 'next/navigation';
 import { smoothScrollTo } from '../utils/smoothScroll';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +22,14 @@ export default function Navbar() {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
-    smoothScrollTo(targetId);
+
+    // If not on homepage, navigate to homepage with hash
+    if (pathname !== '/') {
+      router.push(`/${targetId}`);
+    } else {
+      // If on homepage, smooth scroll to section
+      smoothScrollTo(targetId);
+    }
   };
 
   return (
