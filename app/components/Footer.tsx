@@ -57,6 +57,16 @@ export default function Footer() {
                   Get Notified
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://newsletter.apptoolspro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-brand-teal transition-colors"
+                >
+                  Newsletter
+                </a>
+              </li>
             </ul>
           </div>
 
