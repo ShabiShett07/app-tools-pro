@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { smoothScrollTo } from '../utils/smoothScroll';
 
 export default function Hero() {
@@ -100,16 +101,22 @@ export default function Hero() {
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
+          <Link
+            href="/tools"
+            className="group relative bg-brand-red text-white px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:shadow-2xl overflow-hidden cursor-pointer"
+          >
+            <span className="relative z-10">Explore Apps & Tools</span>
+            <div className="absolute inset-0 bg-brand-teal transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+            <span className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              Explore Apps & Tools
+            </span>
+          </Link>
           <a
             href="#notify"
             onClick={(e) => handleScrollClick(e, '#notify')}
-            className="group relative bg-brand-red text-white px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:shadow-2xl overflow-hidden cursor-pointer"
+            className="border-2 border-brand-red text-brand-red px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:bg-brand-red hover:text-white cursor-pointer"
           >
-            <span className="relative z-10">Join the Revolution</span>
-            <div className="absolute inset-0 bg-brand-teal transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
-            <span className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-              Join the Revolution
-            </span>
+            Join the Revolution
           </a>
           <a
             href="#vision"

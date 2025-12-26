@@ -54,6 +54,12 @@ export default function Navbar() {
           {/* Right - Navigation */}
           <div className="flex justify-end">
             <div className="hidden md:flex items-center space-x-8">
+              <Link
+                href="/tools"
+                className="text-foreground hover:text-brand-red transition-colors font-medium cursor-pointer"
+              >
+                Tools
+              </Link>
               <a
                 href="#about"
                 onClick={(e) => handleNavClick(e, '#about')}
