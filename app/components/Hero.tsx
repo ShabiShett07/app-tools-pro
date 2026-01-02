@@ -103,27 +103,26 @@ export default function Hero() {
         >
           <Link
             href="/tools"
+            className="border-2 border-brand-teal text-brand-teal px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:bg-brand-teal hover:text-white cursor-pointer min-w-[240px] text-center"
+          >
+            Explore Apps & Tools
+          </Link>
+          <Link
+            href="/custom-tool"
             className="group relative bg-brand-red text-white px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:shadow-2xl overflow-hidden cursor-pointer"
           >
-            <span className="relative z-10">Explore Apps & Tools</span>
+            <span className="relative z-10">Wish Tools</span>
             <div className="absolute inset-0 bg-brand-teal transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
             <span className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-              Explore Apps & Tools
+              Wish Tools
             </span>
           </Link>
           <a
             href="#notify"
             onClick={(e) => handleScrollClick(e, '#notify')}
-            className="border-2 border-brand-red text-brand-red px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:bg-brand-red hover:text-white cursor-pointer"
+            className="border-2 border-brand-red text-brand-red px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:bg-brand-red hover:text-white cursor-pointer min-w-[240px] text-center"
           >
             Join the Revolution
-          </a>
-          <a
-            href="#vision"
-            onClick={(e) => handleScrollClick(e, '#vision')}
-            className="border-2 border-brand-teal text-brand-teal px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:bg-brand-teal hover:text-white cursor-pointer"
-          >
-            Learn More
           </a>
         </div>
       </div>

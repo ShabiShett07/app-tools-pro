@@ -18,3 +18,10 @@ export interface WaitlistEntry {
   created_at?: string;
   updated_at?: string;
 }
+
+export interface CustomToolRequest {
+  id?: string;
+  email: string;
+  tool_description: string;
+  created_at?: string;
+}
