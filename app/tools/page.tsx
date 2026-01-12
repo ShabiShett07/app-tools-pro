@@ -18,11 +18,11 @@ interface Tool {
 
 const tools: Tool[] = [
   {
-    id: 'tabecho',
-    name: 'TabEcho',
-    description: 'Share your browser tabs instantly with anyone, anywhere. Perfect for collaboration and quick sharing.',
-    icon: '/tabecho.png',
-    url: '/tabecho',
+    id: 'winingo',
+    name: 'Winingo',
+    description: 'Generate well-reasoned business ideas based on strategic inputs. Get structured thinking, opportunity framing, and actionable execution plans.',
+    icon: '/winingo.png',
+    url: '/winingo',
     category: 'productivity',
     status: 'available'
   },

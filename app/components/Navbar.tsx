@@ -43,7 +43,7 @@ export default function Navbar() {
           {/* Left - Logo */}
           <Link href="/" className="flex items-center cursor-pointer">
             <Image
-              src="/logo.png"
+              src="/winingo.png"
               alt="App Tools Pro Logo"
               width={72}
               height={72}
