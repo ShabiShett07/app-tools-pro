@@ -42,15 +42,19 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        {/* Coming Soon Tag */}
+        {/* Launch Announcement */}
         <div
           className={`inline-block mb-8 transition-all duration-1000 ${
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <span className="bg-brand-teal bg-opacity-10 text-brand-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider border-2 border-brand-teal">
-            Coming Soon
-          </span>
+          <Link href="/winingo" className="group">
+            <span className="bg-gradient-to-r from-brand-red to-brand-teal text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg hover:shadow-xl transition-all flex items-center gap-2">
+              <span className="animate-pulse">🎉</span>
+              First App Launched - Winingo Now Live!
+              <span className="animate-pulse">🎉</span>
+            </span>
+          </Link>
         </div>
 
         {/* Main Heading */}

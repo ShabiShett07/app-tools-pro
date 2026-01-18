@@ -37,7 +37,7 @@ export default function WiningoMarketing() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a
-                href="https://apps.apple.com"
+                href="https://apps.apple.com/us/app/winningo/id6757672374"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-brand-red px-10 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg inline-block"
@@ -457,7 +457,7 @@ export default function WiningoMarketing() {
             Your next big opportunity is just a tap away.
           </p>
           <a
-            href="https://apps.apple.com"
+            href="https://apps.apple.com/us/app/winningo/id6757672374"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-brand-red px-12 py-5 rounded-xl font-bold text-xl hover:bg-gray-100 transition-colors shadow-2xl inline-block mb-6"

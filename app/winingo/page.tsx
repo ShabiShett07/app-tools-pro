@@ -26,15 +26,14 @@ export default function WiningoPage() {
               </div>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Winingo - Your Next Business Idea
+              Your Next Business Idea is Hidden Here
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-              A production-ready iOS app that helps you generate well-reasoned business ideas based on strategic inputs.
-              Get structured thinking, opportunity framing, and actionable execution plans.
+              Give us some basic details. We will give you the structured plan.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://apps.apple.com"
+                href="https://apps.apple.com/us/app/winningo/id6757672374"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-brand-red px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg inline-block"
@@ -315,7 +314,7 @@ export default function WiningoPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://apps.apple.com"
+              href="https://apps.apple.com/us/app/winningo/id6757672374"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-brand-red px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg inline-block"
