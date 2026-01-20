@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center space-x-3 mb-4 cursor-pointer w-fit">
               <Image
-                src="/winingo.png"
+                src="/logo.png"
                 alt="App Tools Pro Logo"
                 width={64}
                 height={64}
