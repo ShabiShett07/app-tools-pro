@@ -43,6 +43,19 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
 
+        {/* Template Announcement */}
+        <div
+          className={`inline-block mb-8 transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+        >
+          <Link href="/templates/first-client-in-10-days" className="group">
+            <span className="bg-gradient-to-r from-brand-red to-brand-teal text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg hover:shadow-xl transition-all flex items-center gap-2">
+              <span className="animate-pulse">🚀</span>
+              Free Template: 10 Days, $0 Investment — Get Your First Client!
+              <span className="animate-pulse">→</span>
+            </span>
+          </Link>
+        </div>
 
         {/* Main Heading */}
         <h1
