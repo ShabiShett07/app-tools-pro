@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "App Tools Pro",
-  description: "App Tools Pro - Revolutionizing App Development",
+  description: "App Tools Pro - The one-stop platform for early entrepreneurs. Tools, templates, and resources to launch, grow, and land your first clients.",
 };
 
 export default function RootLayout({

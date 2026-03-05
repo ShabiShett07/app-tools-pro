@@ -28,9 +28,9 @@ export default function Vision() {
   }, []);
 
   const visionItems = [
-    'Premium Chrome Extensions',
-    'Powerful Web Applications',
-    'Productivity Tools That Scale',
+    'Actionable Templates & Playbooks',
+    'Tools to Land Your First Clients',
+    'Resources That Scale With You',
   ];
 
   return (
@@ -47,24 +47,23 @@ export default function Vision() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Text Content */}
           <div
-            className={`transition-all duration-1000 ${
-              isVisible
+            className={`transition-all duration-1000 ${isVisible
                 ? 'opacity-100 translate-x-0'
                 : 'opacity-0 -translate-x-10'
-            }`}
+              }`}
           >
             <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
               Our Vision
             </h2>
             <div className="space-y-4 mb-8">
               <p className="text-lg text-gray-700 leading-relaxed">
-                App Tools Pro is more than just a collection of apps. It's a
-                movement towards smarter, more powerful productivity tools that
-                adapt to your needs.
+                App Tools Pro is the launchpad for early-stage entrepreneurs.
+                We build the tools, templates, and resources you need to stop
+                planning and start doing.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                We're crafting experiences that blend power with creativity,
-                functionality with beauty, innovation with simplicity.
+                Whether you're landing your first client, building a personal
+                brand, or launching a side project — we've got you covered.
               </p>
             </div>
 
@@ -73,11 +72,10 @@ export default function Vision() {
               {visionItems.map((item, index) => (
                 <div
                   key={index}
-                  className={`flex items-center gap-4 transition-all duration-700 ${
-                    isVisible
+                  className={`flex items-center gap-4 transition-all duration-700 ${isVisible
                       ? 'opacity-100 translate-x-0'
                       : 'opacity-0 -translate-x-10'
-                  }`}
+                    }`}
                   style={{ transitionDelay: `${(index + 1) * 200}ms` }}
                 >
                   <div className="flex-shrink-0 w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center">
@@ -105,11 +103,10 @@ export default function Vision() {
 
           {/* Right Side - Graphic */}
           <div
-            className={`relative transition-all duration-1000 ${
-              isVisible
+            className={`relative transition-all duration-1000 ${isVisible
                 ? 'opacity-100 translate-x-0'
                 : 'opacity-0 translate-x-10'
-            }`}
+              }`}
           >
             <div className="relative w-full h-96 flex items-center justify-center">
               {/* Pulsing Circle Animation */}

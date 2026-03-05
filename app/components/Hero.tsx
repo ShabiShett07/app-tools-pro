@@ -42,28 +42,14 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        {/* Launch Announcement */}
-        <div
-          className={`inline-block mb-8 transition-all duration-1000 ${
-            mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <Link href="/winingo" className="group">
-            <span className="bg-gradient-to-r from-brand-red to-brand-teal text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg hover:shadow-xl transition-all flex items-center gap-2">
-              <span className="animate-pulse">🎉</span>
-              First App Launched - Winingo Now Live!
-              <span className="animate-pulse">🎉</span>
-            </span>
-          </Link>
-        </div>
+
 
         {/* Main Heading */}
         <h1
-          className={`text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight transition-all duration-1000 delay-200 ${
-            mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight transition-all duration-1000 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
-          <span className="text-foreground">The Future of </span>
+          <span className="text-foreground">Your </span>
           <br />
           <span
             className="inline-block cursor-pointer"
@@ -83,51 +69,34 @@ export default function Hero() {
               e.currentTarget.style.backgroundPosition = '0% 50%';
             }}
           >
-            Productivity
+            Entrepreneurial
           </span>
           <br />
-          <span className="text-foreground">Starts Here</span>
+          <span className="text-foreground">Journey Starts Here</span>
         </h1>
 
         {/* Subtitle */}
         <p
-          className={`text-lg md:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-1000 delay-400 ${
-            mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`text-lg md:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-1000 delay-400 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
-          We're building a revolutionary suite of apps, extensions, and tools
-          that will redefine how you work, create, and innovate.
+          The one-stop platform for early entrepreneurs — tools, templates,
+          and resources to help you launch, grow, and land your first clients.
         </p>
 
         {/* CTA Buttons */}
         <div
-          className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-600 ${
-            mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-600 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <Link
             href="/tools"
             className="border-2 border-brand-teal text-brand-teal px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:bg-brand-teal hover:text-white cursor-pointer min-w-[240px] text-center"
           >
-            Explore Apps & Tools
+            Explore Resources
           </Link>
-          <Link
-            href="/custom-tool"
-            className="group relative bg-brand-red text-white px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:shadow-2xl overflow-hidden cursor-pointer"
-          >
-            <span className="relative z-10">Wish Tools</span>
-            <div className="absolute inset-0 bg-brand-teal transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
-            <span className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-              Wish Tools
-            </span>
-          </Link>
-          <a
-            href="#notify"
-            onClick={(e) => handleScrollClick(e, '#notify')}
-            className="border-2 border-brand-red text-brand-red px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:bg-brand-red hover:text-white cursor-pointer min-w-[240px] text-center"
-          >
-            Join the Revolution
-          </a>
+
+
         </div>
       </div>
     </section>

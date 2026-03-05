@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import About from './components/About';
 import Vision from './components/Vision';
-import Notify from './components/Notify';
+
 import Footer from './components/Footer';
 import { smoothScrollTo } from './utils/smoothScroll';
 
@@ -35,7 +35,7 @@ export default function Home() {
       <Stats />
       <About />
       <Vision />
-      <Notify />
+
       <Footer />
     </div>
   );

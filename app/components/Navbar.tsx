@@ -34,9 +34,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="grid grid-cols-3 items-center">
@@ -84,13 +83,7 @@ export default function Navbar() {
               >
                 Vision
               </a>
-              <a
-                href="#notify"
-                onClick={(e) => handleNavClick(e, '#notify')}
-                className="bg-brand-red hover:bg-opacity-90 text-white px-6 py-2 rounded-full font-semibold transition-all transform hover:scale-105 cursor-pointer"
-              >
-                Get Notified
-              </a>
+
             </div>
 
             {/* Mobile Menu Button */}

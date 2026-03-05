@@ -29,9 +29,9 @@ export default function Stats() {
   }, []);
 
   const stats = [
-    { number: 1, label: 'App Launched & Live on App Store', suffix: '', link: '/winingo' },
-    { number: 1, label: 'Extensions Launching Soon', suffix: '' },
-    { number: 1, label: 'Revolutionary Vision', suffix: '' },
+    { number: 1, label: 'Free Template Live Now', suffix: '', link: '/templates/first-client-in-10-days' },
+    { number: 1, label: 'App In Progress', suffix: '', link: '/tools' },
+    { number: '∞', label: 'Resources Coming Soon', suffix: '' },
   ];
 
   return (
@@ -54,11 +54,10 @@ export default function Stats() {
               </>
             );
 
-            const baseClasses = `text-center transition-all duration-1000 ${
-              isVisible
-                ? 'opacity-100 translate-y-0'
-                : 'opacity-0 translate-y-10'
-            }`;
+            const baseClasses = `text-center transition-all duration-1000 ${isVisible
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 translate-y-10'
+              }`;
 
             if ('link' in stat && stat.link) {
               return (

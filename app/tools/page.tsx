@@ -13,7 +13,7 @@ interface Tool {
   icon: string;
   url: string;
   category: 'productivity' | 'communication' | 'utility';
-  status: 'available' | 'coming-soon';
+  status: 'available' | 'coming-soon' | 'in-progress';
 }
 
 const tools: Tool[] = [
@@ -24,7 +24,7 @@ const tools: Tool[] = [
     icon: '/winingo.png',
     url: '/winingo',
     category: 'productivity',
-    status: 'available'
+    status: 'in-progress'
   },
   // Add more tools here as they become available
 ];
@@ -71,7 +71,7 @@ export default function ToolsPage() {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover powerful productivity tools designed to enhance your workflow and boost your efficiency.
+            Tools and resources built for early entrepreneurs — launch faster, grow smarter, and land your first clients.
           </p>
         </div>
       </section>
@@ -82,41 +82,37 @@ export default function ToolsPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <button
               onClick={() => setSelectedCategory('all')}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${
-                selectedCategory === 'all'
-                  ? 'bg-brand-red text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
-              }`}
+              className={`px-6 py-2 rounded-full font-semibold transition-all ${selectedCategory === 'all'
+                ? 'bg-brand-red text-white'
+                : 'bg-white text-gray-700 hover:bg-gray-100'
+                }`}
             >
               All Tools
             </button>
             <button
               onClick={() => setSelectedCategory('productivity')}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${
-                selectedCategory === 'productivity'
-                  ? 'bg-brand-red text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
-              }`}
+              className={`px-6 py-2 rounded-full font-semibold transition-all ${selectedCategory === 'productivity'
+                ? 'bg-brand-red text-white'
+                : 'bg-white text-gray-700 hover:bg-gray-100'
+                }`}
             >
               Productivity
             </button>
             <button
               onClick={() => setSelectedCategory('communication')}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${
-                selectedCategory === 'communication'
-                  ? 'bg-brand-red text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
-              }`}
+              className={`px-6 py-2 rounded-full font-semibold transition-all ${selectedCategory === 'communication'
+                ? 'bg-brand-red text-white'
+                : 'bg-white text-gray-700 hover:bg-gray-100'
+                }`}
             >
               Communication
             </button>
             <button
               onClick={() => setSelectedCategory('utility')}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${
-                selectedCategory === 'utility'
-                  ? 'bg-brand-red text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
-              }`}
+              className={`px-6 py-2 rounded-full font-semibold transition-all ${selectedCategory === 'utility'
+                ? 'bg-brand-red text-white'
+                : 'bg-white text-gray-700 hover:bg-gray-100'
+                }`}
             >
               Utility
             </button>
@@ -140,6 +136,11 @@ export default function ToolsPage() {
                 {tool.status === 'coming-soon' && (
                   <div className="absolute top-4 right-4 bg-brand-teal text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
                     Coming Soon
+                  </div>
+                )}
+                {tool.status === 'in-progress' && (
+                  <div className="absolute top-4 right-4 bg-amber-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
+                    In Progress
                   </div>
                 )}
 
@@ -172,6 +173,12 @@ export default function ToolsPage() {
                   >
                     Try it Now →
                   </Link>
+                ) : tool.status === 'in-progress' ? (
+                  <span
+                    className="inline-block bg-amber-500 text-white px-6 py-3 rounded-full font-semibold cursor-default"
+                  >
+                    In Progress
+                  </span>
                 ) : (
                   <button
                     disabled
@@ -195,23 +202,7 @@ export default function ToolsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-brand-red to-brand-teal">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            More Tools Coming Soon
-          </h2>
-          <p className="text-xl text-white opacity-90 mb-8">
-            We're constantly building new tools to help you work smarter. Join our waitlist to be the first to know.
-          </p>
-          <Link
-            href="/#notify"
-            className="inline-block bg-white text-brand-red px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:shadow-2xl"
-          >
-            Get Notified
-          </Link>
-        </div>
-      </section>
+
 
       <Footer />
 

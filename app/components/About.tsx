@@ -44,9 +44,9 @@ export default function About() {
           />
         </svg>
       ),
-      title: 'Power',
+      title: 'Launch Fast',
       description:
-        'Unleashing tools that amplify your capabilities and transform your workflow.',
+        'Everything you need to go from idea to first client — templates, tools, and proven frameworks.',
       color: 'brand-red',
     },
     {
@@ -65,9 +65,9 @@ export default function About() {
           />
         </svg>
       ),
-      title: 'Creativity',
+      title: 'Grow Smarter',
       description:
-        'Innovative solutions designed to inspire and elevate your creative process.',
+        'Learn the strategies that actually work — from landing clients to building your personal brand.',
       color: 'brand-teal',
     },
     {
@@ -86,9 +86,9 @@ export default function About() {
           />
         </svg>
       ),
-      title: 'Innovation',
+      title: 'Stand Out',
       description:
-        'Breaking boundaries with cutting-edge technology and bold ideas.',
+        'Build your edge with resources designed for entrepreneurs who refuse to blend in.',
       color: 'brand-red',
     },
   ];
@@ -102,12 +102,11 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4">
-            The Beginning
+            Built for Builders
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-brand-red to-brand-teal mx-auto rounded-full"></div>
         </div>
@@ -117,11 +116,10 @@ export default function About() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-gray-100 hover:border-${feature.color} ${
-                isVisible
+              className={`group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-gray-100 hover:border-${feature.color} ${isVisible
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-10'
-              }`}
+                }`}
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               {/* Icon Container */}

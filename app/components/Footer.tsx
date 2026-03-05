@@ -25,7 +25,7 @@ export default function Footer() {
               </h3>
             </Link>
             <p className="text-gray-400 leading-relaxed">
-              Building the future, one tool at a time.
+              Your one-stop platform for early entrepreneurs.
             </p>
           </div>
 
@@ -49,14 +49,7 @@ export default function Footer() {
                   Vision
                 </a>
               </li>
-              <li>
-                <a
-                  href="#notify"
-                  className="text-gray-400 hover:text-brand-red transition-colors"
-                >
-                  Get Notified
-                </a>
-              </li>
+
               <li>
                 <a
                   href="https://newsletter.apptoolspro.com"
