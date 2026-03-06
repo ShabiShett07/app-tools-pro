@@ -39,16 +39,16 @@ export default function Stats() {
       ref={sectionRef}
       className="py-20 bg-gradient-to-r from-brand-red to-brand-teal"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => {
             const content = (
               <>
-                <div className="text-5xl md:text-6xl font-black text-white mb-3">
+                <div className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-2 sm:mb-3">
                   {stat.number}
                   {stat.suffix}
                 </div>
-                <div className="text-lg md:text-xl text-white text-opacity-90 font-medium">
+                <div className="text-base sm:text-lg md:text-xl text-white text-opacity-90 font-medium">
                   {stat.label}
                 </div>
               </>

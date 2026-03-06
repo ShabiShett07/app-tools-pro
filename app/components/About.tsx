@@ -99,13 +99,13 @@ export default function About() {
       id="about"
       className="py-24 bg-white"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
-          <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mb-4">
             Built for Builders
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-brand-red to-brand-teal mx-auto rounded-full"></div>
@@ -117,8 +117,8 @@ export default function About() {
             <div
               key={index}
               className={`group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-gray-100 hover:border-${feature.color} ${isVisible
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-10'
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-10'
                 }`}
               style={{ transitionDelay: `${index * 200}ms` }}
             >

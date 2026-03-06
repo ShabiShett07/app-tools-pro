@@ -85,8 +85,8 @@ export default function FirstClientTemplate() {
         <div className="min-h-screen bg-white overflow-x-hidden">
             {/* Navigation Bar */}
             <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-                <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                    <Link href="/" className="flex items-center gap-3">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+                    <Link href="/" className="flex items-center gap-2 sm:gap-3">
                         <Image
                             src="/logo.png"
                             alt="App Tools Pro Logo"
@@ -94,7 +94,7 @@ export default function FirstClientTemplate() {
                             height={48}
                             className="rounded-lg"
                         />
-                        <div className="text-2xl font-bold">
+                        <div className="text-xl sm:text-2xl font-bold">
                             <span className="text-foreground">App</span>
                             <span className="text-brand-red">Tools</span>
                             <span className="text-brand-teal">Pro</span>
@@ -102,7 +102,7 @@ export default function FirstClientTemplate() {
                     </Link>
                     <Link
                         href="/"
-                        className="text-gray-600 hover:text-brand-red transition-colors font-medium"
+                        className="text-sm sm:text-base text-gray-600 hover:text-brand-red transition-colors font-medium"
                     >
                         ← Back to Home
                     </Link>
@@ -110,7 +110,7 @@ export default function FirstClientTemplate() {
             </nav>
 
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 overflow-hidden">
+            <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute top-20 -left-20 w-96 h-96 bg-brand-red opacity-[0.07] rounded-full blur-3xl animate-pulse"></div>
@@ -135,7 +135,7 @@ export default function FirstClientTemplate() {
                     ></div>
                 </div>
 
-                <div className="relative z-10 max-w-5xl mx-auto px-6">
+                <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
                     {/* Badge */}
                     <div
                         className={`text-center mb-8 transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -148,7 +148,7 @@ export default function FirstClientTemplate() {
 
                     {/* Headline */}
                     <h1
-                        className={`text-center text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 transition-all duration-1000 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                        className={`text-center text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-4 sm:mb-6 transition-all duration-1000 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                             }`}
                     >
                         <span className="text-foreground">Get Your First Client</span>
@@ -181,7 +181,7 @@ export default function FirstClientTemplate() {
 
                     {/* Subtitle */}
                     <p
-                        className={`text-center text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-1000 delay-400 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                        className={`text-center text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed transition-all duration-1000 delay-400 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                             }`}
                     >
                         A step-by-step Notion template that shows you exactly how to land your
@@ -194,7 +194,7 @@ export default function FirstClientTemplate() {
                             }`}
                     >
                         {!success ? (
-                            <div className="bg-white rounded-2xl shadow-2xl border-2 border-gray-100 p-8 md:p-10">
+                            <div className="bg-white rounded-2xl shadow-2xl border-2 border-gray-100 p-6 sm:p-8 md:p-10">
                                 <div className="text-center mb-6">
                                     <h2 className="text-xl font-bold text-foreground mb-2">
                                         Enter your email to get the template
@@ -319,12 +319,12 @@ export default function FirstClientTemplate() {
 
             {/* What You'll Get Section */}
             <section className="py-20 bg-gray-50">
-                <div className="max-w-6xl mx-auto px-6">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6">
                     <div className="text-center mb-14">
-                        <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-4">
                             What's Inside the Template?
                         </h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                        <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
                             Everything you need to go from zero to your first paying client — organized, actionable, and proven.
                         </p>
                     </div>
@@ -333,7 +333,7 @@ export default function FirstClientTemplate() {
                         {features.map((feature, index) => (
                             <div
                                 key={index}
-                                className="bg-white rounded-2xl p-7 border-2 border-gray-100 hover:border-brand-red/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                                className="bg-white rounded-2xl p-5 sm:p-7 border-2 border-gray-100 hover:border-brand-red/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                                 style={{
                                     animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
                                 }}
@@ -349,17 +349,17 @@ export default function FirstClientTemplate() {
 
             {/* Social Proof / Urgency Section */}
             <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 text-center">
-                    <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-10 md:p-14 relative overflow-hidden">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+                    <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-14 relative overflow-hidden">
                         {/* Background Glow */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-brand-red/20 rounded-full blur-3xl"></div>
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-teal/20 rounded-full blur-3xl"></div>
 
                         <div className="relative z-10">
-                            <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-4">
                                 Stop Scrolling. Start Earning.
                             </h2>
-                            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+                            <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
                                 Most people spend months trying to figure out client acquisition. This template gives you a
                                 clear path in just <strong className="text-white">10 days</strong> — and it's completely free.
                             </p>
@@ -371,7 +371,7 @@ export default function FirstClientTemplate() {
                                         e.preventDefault();
                                         window.scrollTo({ top: 0, behavior: 'smooth' });
                                     }}
-                                    className="inline-flex items-center gap-2 py-4 px-10 rounded-full bg-gradient-to-r from-brand-red to-brand-teal text-white font-bold text-lg transition-all transform hover:scale-105 hover:shadow-2xl"
+                                    className="inline-flex items-center gap-2 py-3 sm:py-4 px-6 sm:px-10 rounded-full bg-gradient-to-r from-brand-red to-brand-teal text-white font-bold text-base sm:text-lg transition-all transform hover:scale-105 hover:shadow-2xl"
                                 >
                                     Get the Template — It's Free
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -383,7 +383,7 @@ export default function FirstClientTemplate() {
                                     href={NOTION_TEMPLATE_URL}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 py-4 px-10 rounded-full bg-gradient-to-r from-brand-red to-brand-teal text-white font-bold text-lg transition-all transform hover:scale-105 hover:shadow-2xl"
+                                    className="inline-flex items-center gap-2 py-3 sm:py-4 px-6 sm:px-10 rounded-full bg-gradient-to-r from-brand-red to-brand-teal text-white font-bold text-base sm:text-lg transition-all transform hover:scale-105 hover:shadow-2xl"
                                 >
                                     Open Your Template
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -398,7 +398,7 @@ export default function FirstClientTemplate() {
 
             {/* Minimal Footer */}
             <footer className="py-8 bg-gray-50 border-t border-gray-100">
-                <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <Link href="/" className="flex items-center gap-2">
                         <Image src="/logo.png" alt="App Tools Pro" width={32} height={32} className="rounded-md" />
                         <span className="font-bold text-sm">

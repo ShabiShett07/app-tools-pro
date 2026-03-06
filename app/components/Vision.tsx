@@ -43,16 +43,16 @@ export default function Vision() {
       <div className="absolute top-0 right-0 w-96 h-96 bg-brand-teal opacity-5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-red opacity-5 rounded-full blur-3xl"></div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Text Content */}
           <div
             className={`transition-all duration-1000 ${isVisible
-                ? 'opacity-100 translate-x-0'
-                : 'opacity-0 -translate-x-10'
+              ? 'opacity-100 translate-x-0'
+              : 'opacity-0 -translate-x-10'
               }`}
           >
-            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mb-6">
               Our Vision
             </h2>
             <div className="space-y-4 mb-8">
@@ -73,8 +73,8 @@ export default function Vision() {
                 <div
                   key={index}
                   className={`flex items-center gap-4 transition-all duration-700 ${isVisible
-                      ? 'opacity-100 translate-x-0'
-                      : 'opacity-0 -translate-x-10'
+                    ? 'opacity-100 translate-x-0'
+                    : 'opacity-0 -translate-x-10'
                     }`}
                   style={{ transitionDelay: `${(index + 1) * 200}ms` }}
                 >
@@ -104,8 +104,8 @@ export default function Vision() {
           {/* Right Side - Graphic */}
           <div
             className={`relative transition-all duration-1000 ${isVisible
-                ? 'opacity-100 translate-x-0'
-                : 'opacity-0 translate-x-10'
+              ? 'opacity-100 translate-x-0'
+              : 'opacity-0 translate-x-10'
               }`}
           >
             <div className="relative w-full h-96 flex items-center justify-center">

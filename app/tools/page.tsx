@@ -55,8 +55,8 @@ export default function ToolsPage() {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-brand-teal opacity-10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
             <span className="text-foreground">Explore Our </span>
             <span
               className="inline-block"
@@ -70,7 +70,7 @@ export default function ToolsPage() {
               Apps & Tools
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Tools and resources built for early entrepreneurs — launch faster, grow smarter, and land your first clients.
           </p>
         </div>
@@ -78,11 +78,11 @@ export default function ToolsPage() {
 
       {/* Filter Section */}
       <section className="py-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex flex-wrap gap-4 justify-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="flex flex-wrap gap-2 sm:gap-4 justify-center">
             <button
               onClick={() => setSelectedCategory('all')}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${selectedCategory === 'all'
+              className={`px-4 sm:px-6 py-2 rounded-full font-semibold text-sm sm:text-base transition-all ${selectedCategory === 'all'
                 ? 'bg-brand-red text-white'
                 : 'bg-white text-gray-700 hover:bg-gray-100'
                 }`}
@@ -91,7 +91,7 @@ export default function ToolsPage() {
             </button>
             <button
               onClick={() => setSelectedCategory('productivity')}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${selectedCategory === 'productivity'
+              className={`px-4 sm:px-6 py-2 rounded-full font-semibold text-sm sm:text-base transition-all ${selectedCategory === 'productivity'
                 ? 'bg-brand-red text-white'
                 : 'bg-white text-gray-700 hover:bg-gray-100'
                 }`}
@@ -100,7 +100,7 @@ export default function ToolsPage() {
             </button>
             <button
               onClick={() => setSelectedCategory('communication')}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${selectedCategory === 'communication'
+              className={`px-4 sm:px-6 py-2 rounded-full font-semibold text-sm sm:text-base transition-all ${selectedCategory === 'communication'
                 ? 'bg-brand-red text-white'
                 : 'bg-white text-gray-700 hover:bg-gray-100'
                 }`}
@@ -109,7 +109,7 @@ export default function ToolsPage() {
             </button>
             <button
               onClick={() => setSelectedCategory('utility')}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${selectedCategory === 'utility'
+              className={`px-4 sm:px-6 py-2 rounded-full font-semibold text-sm sm:text-base transition-all ${selectedCategory === 'utility'
                 ? 'bg-brand-red text-white'
                 : 'bg-white text-gray-700 hover:bg-gray-100'
                 }`}
@@ -122,12 +122,12 @@ export default function ToolsPage() {
 
       {/* Tools Grid */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {filteredTools.map((tool, index) => (
               <div
                 key={tool.id}
-                className="group relative bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-brand-red transition-all duration-300 hover:shadow-xl transform hover:-translate-y-2"
+                className="group relative bg-white border-2 border-gray-200 rounded-2xl p-6 sm:p-8 hover:border-brand-red transition-all duration-300 hover:shadow-xl transform hover:-translate-y-2"
                 style={{
                   animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
                 }}

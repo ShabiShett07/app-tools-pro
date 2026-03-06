@@ -41,7 +41,7 @@ export default function Hero() {
         ></div>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
 
         {/* Template Announcement */}
         <div
@@ -49,7 +49,7 @@ export default function Hero() {
             }`}
         >
           <Link href="/templates/first-client-in-10-days" className="group">
-            <span className="bg-gradient-to-r from-brand-red to-brand-teal text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg hover:shadow-xl transition-all flex items-center gap-2">
+            <span className="bg-gradient-to-r from-brand-red to-brand-teal text-white px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider shadow-lg hover:shadow-xl transition-all flex items-center gap-1 sm:gap-2 text-center leading-tight">
               <span className="animate-pulse">🚀</span>
               Free Template: 10 Days, $0 Investment — Get Your First Client!
               <span className="animate-pulse">→</span>
@@ -59,7 +59,7 @@ export default function Hero() {
 
         {/* Main Heading */}
         <h1
-          className={`text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight transition-all duration-1000 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black mb-6 sm:mb-8 leading-tight transition-all duration-1000 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
           <span className="text-foreground">Your </span>
@@ -90,7 +90,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p
-          className={`text-lg md:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-1000 delay-400 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed transition-all duration-1000 delay-400 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
           The one-stop platform for early entrepreneurs — tools, templates,
@@ -104,7 +104,7 @@ export default function Hero() {
         >
           <Link
             href="/tools"
-            className="border-2 border-brand-teal text-brand-teal px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:bg-brand-teal hover:text-white cursor-pointer min-w-[240px] text-center"
+            className="border-2 border-brand-teal text-brand-teal px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all transform hover:scale-105 hover:bg-brand-teal hover:text-white cursor-pointer min-w-[200px] sm:min-w-[240px] text-center"
           >
             Explore Resources
           </Link>
