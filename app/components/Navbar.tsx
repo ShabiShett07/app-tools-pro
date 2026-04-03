@@ -143,13 +143,7 @@ export default function Navbar() {
           >
             Vision
           </a>
-          <Link
-            href="/templates/first-client-in-10-days"
-            className="block px-4 py-3 rounded-lg bg-gradient-to-r from-brand-red to-brand-teal text-white font-semibold text-center mt-2"
-            onClick={() => setMobileOpen(false)}
-          >
-            🚀 Free Template
-          </Link>
+
         </div>
       </div>
     </nav>

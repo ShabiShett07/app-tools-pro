@@ -25,7 +25,7 @@ export default function Footer() {
               </h3>
             </Link>
             <p className="text-gray-400 leading-relaxed">
-              Your one-stop platform for early entrepreneurs.
+              Build and fix your products. Launch fast.
             </p>
           </div>
 

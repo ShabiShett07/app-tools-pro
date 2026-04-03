@@ -28,9 +28,9 @@ export default function Vision() {
   }, []);
 
   const visionItems = [
-    'Actionable Templates & Playbooks',
-    'Tools to Land Your First Clients',
-    'Resources That Scale With You',
+    'Full-Stack Web Development',
+    'Robotics & Hardware Prototyping',
+    'Launch-Ready Products',
   ];
 
   return (
@@ -53,17 +53,18 @@ export default function Vision() {
               }`}
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mb-6">
-              Our Vision
+              Our Mission
             </h2>
             <div className="space-y-4 mb-8">
               <p className="text-lg text-gray-700 leading-relaxed">
-                App Tools Pro is the launchpad for early-stage entrepreneurs.
-                We build the tools, templates, and resources you need to stop
-                planning and start doing.
+                AppToolsPro exists to help early-stage founders turn ideas into
+                real, working products — fast. We build, fix, and ship so you
+                don&apos;t have to figure it all out alone.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Whether you're landing your first client, building a personal
-                brand, or launching a side project — we've got you covered.
+                Whether you&apos;re building a web app, a robotics prototype, or
+                anything in between — we&apos;ve got the skills and tools to get
+                you from zero to launch.
               </p>
             </div>
 

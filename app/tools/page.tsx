@@ -17,16 +17,7 @@ interface Tool {
 }
 
 const tools: Tool[] = [
-  {
-    id: 'winingo',
-    name: 'Winingo',
-    description: 'Generate well-reasoned business ideas based on strategic inputs. Get structured thinking, opportunity framing, and actionable execution plans.',
-    icon: '/winingo.png',
-    url: '/winingo',
-    category: 'productivity',
-    status: 'in-progress'
-  },
-  // Add more tools here as they become available
+  // Add tools here as they become available
 ];
 
 export default function ToolsPage() {
@@ -71,7 +62,7 @@ export default function ToolsPage() {
             </span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-            Tools and resources built for early entrepreneurs — launch faster, grow smarter, and land your first clients.
+            Tools and services to help you build, fix, and ship your products — web and robotics.
           </p>
         </div>
       </section>

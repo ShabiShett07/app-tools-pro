@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
-import Link from 'next/link';
 
 export default function Stats() {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,9 +28,9 @@ export default function Stats() {
   }, []);
 
   const stats = [
-    { number: 1, label: 'Free Template Live Now', suffix: '', link: '/templates/first-client-in-10-days' },
-    { number: 1, label: 'App In Progress', suffix: '', link: '/tools' },
-    { number: '∞', label: 'Resources Coming Soon', suffix: '' },
+    { number: '🌐', label: 'Web + Robotics' },
+    { number: '🛠️', label: 'Build & Fix Products' },
+    { number: '🚀', label: 'Launch & Get Users' },
   ];
 
   return (
@@ -41,47 +40,23 @@ export default function Stats() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {stats.map((stat, index) => {
-            const content = (
-              <>
-                <div className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-2 sm:mb-3">
-                  {stat.number}
-                  {stat.suffix}
-                </div>
-                <div className="text-base sm:text-lg md:text-xl text-white text-opacity-90 font-medium">
-                  {stat.label}
-                </div>
-              </>
-            );
-
-            const baseClasses = `text-center transition-all duration-1000 ${isVisible
-              ? 'opacity-100 translate-y-0'
-              : 'opacity-0 translate-y-10'
-              }`;
-
-            if ('link' in stat && stat.link) {
-              return (
-                <Link
-                  key={index}
-                  href={stat.link}
-                  className={`${baseClasses} cursor-pointer hover:scale-105 transform`}
-                  style={{ transitionDelay: `${index * 200}ms` }}
-                >
-                  {content}
-                </Link>
-              );
-            }
-
-            return (
-              <div
-                key={index}
-                className={baseClasses}
-                style={{ transitionDelay: `${index * 200}ms` }}
-              >
-                {content}
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className={`text-center transition-all duration-1000 ${isVisible
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-10'
+                }`}
+              style={{ transitionDelay: `${index * 200}ms` }}
+            >
+              <div className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-2 sm:mb-3">
+                {stat.number}
               </div>
-            );
-          })}
+              <div className="text-base sm:text-lg md:text-xl text-white text-opacity-90 font-medium">
+                {stat.label}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

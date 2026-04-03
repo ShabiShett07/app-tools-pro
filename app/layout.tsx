@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "App Tools Pro",
-  description: "App Tools Pro - The one-stop platform for early entrepreneurs. Tools, templates, and resources to launch, grow, and land your first clients.",
+  title: "AppToolsPro — Turn Your Idea Into a Working Product Fast",
+  description: "AppToolsPro helps early-stage founders build and fix their products (web + robotics), so you can launch and get your first users.",
 };
 
 export default function RootLayout({
