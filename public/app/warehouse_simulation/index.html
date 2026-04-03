@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3D Warehouse Robot</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="ui" style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 15px; border-radius: 8px; font-family: Arial; max-height: 90vh; overflow-y: auto; width: 250px;">
+        <h2 style="margin-top: 0; font-size: 18px; border-bottom: 1px solid #444; padding-bottom: 10px;">📦 Order Picker</h2>
+        
+        <button id="dropdown-toggle" style="width: 100%; padding: 8px; background: #333; color: white; border: 1px solid #555; border-radius: 4px; cursor: pointer; text-align: left; margin-bottom: 15px;">
+            ▼ Select Items
+        </button>
+        
+        <div id="item-list" style="display: none; margin-bottom: 15px;">
+            <!-- Populated by app.js -->
+        </div>
+        
+        <button id="start-btn" style="width: 100%; padding: 10px; background: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">
+            ▶ Start Picking
+        </button>
+        
+        <button id="reset-btn" style="width: 100%; padding: 10px; background: #f44336; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            ↺ Reset Robot
+        </button>
+
+        <div id="status" style="margin-top: 15px; padding: 10px; background: #222; border-radius: 4px; font-size: 14px; color: #aaa;">
+            Ready to pick.
+        </div>
+    </div>
+
+    <style>
+        .section-header {
+            font-weight: bold;
+            color: #4DD0E1;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .item-option {
+            display: block;
+            margin-left: 10px;
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+        .item-checkbox {
+            margin-right: 5px;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
