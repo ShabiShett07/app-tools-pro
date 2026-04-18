@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: '/app/warehouse_simulation/index.html',
         permanent: false,
       },
+      {
+        source: '/apps/smart_picking',
+        destination: '/apps/smart_picking/index.html',
+        permanent: false,
+      },
     ]
   },
 };
