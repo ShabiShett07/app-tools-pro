@@ -9,8 +9,8 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
-        source: '/apps/smart_picking',
-        destination: '/apps/smart_picking/index.html',
+        source: '/app/smart_picking',
+        destination: '/app/smart_picking/index.html',
         permanent: false,
       },
     ]
